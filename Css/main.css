@@ -44,6 +44,8 @@ button{
     color: white;
     font-weight: 500;
     line-height: 1.7;
+    padding: 30px;
+    animation: text 5s 1;
 }
 
 img{
@@ -97,6 +99,9 @@ img{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Img/banner1.jpg) center/cover fixed no-repeat;
 }
 
+#particles-js{
+    height: 100px;
+}
 
 .header-wrapper{
     display: flex;
@@ -156,20 +161,22 @@ img{
     /* transform: translateX(300px); */
 }
 
-.nav-item{
+.nav-link{
     padding: 0.8rem;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
-.nav-item:last-child{
+.nav-link:last-child{
     border-bottom: none;
 }
 
-.nav-item:hover{
+.nav-link:hover{
     background: var(--malibu);
 }
 
-.nav-link{
+/* NAVLINK */
+
+.nav-item{
     color: white;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -206,11 +213,30 @@ img{
     font-size: 2.8rem;
     text-transform: uppercase;
     color: white;
+    padding-top: 380px;
+    animation: text 5s 1;
+}
+
+@keyframes text{
+    0%{
+        color: #1c1d21;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
 }
 
 .banner-btns{
     margin-top: 1.2rem;
+    
 }
+
 
 .banner-btn{
     background: transparent;
@@ -220,6 +246,7 @@ img{
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    animation: text 5s 1;
 }
 
 .banner-btn:last-child{
@@ -403,18 +430,22 @@ img{
 #qr{
     background-color: #6195ff;
 }
+
 .features{
     background: var(--snow);
 }
 
 .features .text-light{
     color: #f4f4f4;
+
 }
 
 .features-left .title .title-text{
     text-align: left;
     color: #f4f4f4;
+
 }
+
 .features-wrapper .title .title-underline{
     margin: 0;
     background: #1c1d21;
@@ -432,35 +463,350 @@ img{
     margin-bottom: 80px;
 }
 
+/* WOPI */
+#wp{
+    background-color: #1c1d21;
+}
 
+.wompi{
+    background: var(--snow);
+}
+
+.wompi .text-light{
+    color: #f4f4f4;
+
+}
+
+.wompi-left .title .title-text{
+    text-align: left;
+    color: #f4f4f4;
+
+}
+
+.wompi-wrapper .title .title-underline{
+    margin: 0;
+    background: #1c1d21;
+}
+.wompi-list li{
+    display: flex;
+    align-items: center;
+}
+.wap-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: white;
+}
+.wompi-left{
+    margin-bottom: 80px;
+}
+
+/* AULAS */
+#au{
+    background-color: #fafafa;
+}
+
+.aulas .text-light{
+    color: #1c1d21;
+}
+
+.aulas-left .title .title-text{
+    text-align: left;
+    color: #1c1d21;
+}
+.aulas-wrapper .title .title-underline{
+    margin: 0;
+    background: #6195ff;
+}
+.aulas-list li{
+    display: flex;
+    align-items: center;
+}
+.aul-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #1c1d21;
+}
+.aulas-left{
+    margin-bottom: 80px;
+}
+
+/* COACHING */
+#co{
+    background-color: #6195ff;
+}
+
+.coaching .text-light{
+    color: #f4f4f4;
+}
+
+.coaching-left .title .title-text{
+    text-align: left;
+    color: #f4f4f4;
+}
+.coaching-wrapper .title .title-underline{
+    margin: 0;
+    background: #1c1d21;
+}
+.coaching-list li{
+    display: flex;
+    align-items: center;
+}
+.coa-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #f4f4f4;
+}
+.coaching-left{
+    margin-bottom: 80px;
+}
+
+/* ELECTRICIDAD */
+#el{
+    background-color: #fafafa;
+}
+
+.electricidad .text-light{
+    color: #1c1d21;
+}
+
+.electricidad-left .title .title-text{
+    text-align: left;
+    color: #1c1d21;
+}
+.electricidad-wrapper .title .title-underline{
+    margin: 0;
+    background: #6195ff;
+}
+.electricidad-list li{
+    display: flex;
+    align-items: center;
+}
+.ele-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #1c1d21;
+}
+.electricidad-left{
+    margin-bottom: 80px;
+}
+
+/* EMPRENDE DIGITAL */
+#em{
+    background-color: #6195ff;
+}
+
+.emprende .text-light{
+    color: #f4f4f4;
+}
+
+.emprende-left .title .title-text{
+    text-align: left;
+    color: #f4f4f4;
+}
+.emprende-wrapper .title .title-underline{
+    margin: 0;
+    background: #1c1d21;
+}
+.emprende-list li{
+    display: flex;
+    align-items: center;
+}
+.emp-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #f4f4f4;
+}
+
+.emprende-left{
+    margin-bottom: 80px;
+}
+
+/* ENERGIA SOLAR */
+#en{
+    background-color: #fafafa;
+}
+
+.energia .text-light{
+    color: #1c1d21;
+}
+
+.energia-left .title .title-text{
+    text-align: left;
+    color: #1c1d21;
+}
+.energia-wrapper .title .title-underline{
+    margin: 0;
+    background: #6195ff;
+}
+.energia-list li{
+    display: flex;
+    align-items: center;
+}
+.en-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #1c1d21;
+}
+.energia-left{
+    margin-bottom: 80px;
+}
+
+/* MANTENIMIENTO C */
+#mc{
+    background-color: #6195ff;
+}
+
+.mantenimiento .text-light{
+    color: #f4f4f4;
+}
+
+.mantenimiento-left .title .title-text{
+    text-align: left;
+    color: #f4f4f4;
+}
+.mantenimiento-wrapper .title .title-underline{
+    margin: 0;
+    background: #1c1d21;
+}
+.mantenimiento-list li{
+    display: flex;
+    align-items: center;
+}
+.man-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #f4f4f4;
+}
+
+.mantenimiento-left{
+    margin-bottom: 80px;
+}
+
+/* MARKETING */
+#mk{
+    background-color: #fafafa;
+}
+
+.marketing .text-light{
+    color: #1c1d21;
+}
+
+.marketing-left .title .title-text{
+    text-align: left;
+    color: #1c1d21;
+}
+.marketing-wrapper .title .title-underline{
+    margin: 0;
+    background: #6195ff;
+}
+.marketing-list li{
+    display: flex;
+    align-items: center;
+}
+.mar-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #1c1d21;
+}
+.marketing-left{
+    margin-bottom: 80px;
+}
 
 /* PAGINAS WEB */
-.paginas{
-    background: var(--snow);
+#web{
+    background-color: #6195ff;
+}
+
+.paginas .text-light{
+    color: #f4f4f4;
 }
 
 .paginas-left .title .title-text{
     text-align: left;
+    color: #f4f4f4;
 }
-
 .paginas-wrapper .title .title-underline{
     margin: 0;
+    background: #1c1d21;
 }
-
 .paginas-list li{
     display: flex;
     align-items: center;
 }
-
-.paginas-list-icon{
+.pag-list-icon{
     font-size: 1.7rem;
     margin-right: 1rem;
-    color: var(--malibu);
+    color: #f4f4f4;
 }
 
 .paginas-left{
     margin-bottom: 80px;
 }
+
+
+/* SOFTWARE */
+#soft{
+    background-color: #fafafa;
+}
+
+.software .text-light{
+    color: #1c1d21;
+}
+
+.software-left .title .title-text{
+    text-align: left;
+    color: #1c1d21;
+}
+.software-wrapper .title .title-underline{
+    margin: 0;
+    background: #6195ff;
+}
+.software-list li{
+    display: flex;
+    align-items: center;
+}
+.sof-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #1c1d21;
+}
+.software-left{
+    margin-bottom: 80px;
+}
+
+
+/* TIENDA VIRTUAL */
+#tv{
+    background-color: #6195ff;
+}
+
+.tienda .text-light{
+    color: #f4f4f4;
+}
+
+.tienda-left .title .title-text{
+    text-align: left;
+    color: #f4f4f4;
+}
+.tienda-wrapper .title .title-underline{
+    margin: 0;
+    background: #1c1d21;
+}
+.tienda-list li{
+    display: flex;
+    align-items: center;
+}
+.ti-list-icon{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #f4f4f4;
+}
+
+.tienda-left{
+    margin-bottom: 80px;
+}
+
+
 
 /* EQUIPO */
 #team{
@@ -568,13 +914,13 @@ img{
     padding: 0.2rem 0;
 }
 .prices-btn{
-    background: none;
+    background: #1c1d21;
     padding: 0.8rem 2rem;
     font-size: 1rem;
-    color: var(--malibu);
+    color: #f4f4f4;
     font-weight: 400;
     border-radius: 3px;
-    border: 2px solid var(--malibu);
+    border: 2px solid #eee;
     cursor: pointer;
 }
 .prices .overlay::after{
@@ -669,6 +1015,42 @@ textarea::placeholder{
     color: var(--lava);
 }
 
+/* SCROLL TOP ON */
+.scrolltop{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 1rem;
+    bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #1c1d21;
+    border-radius: 60%;
+    z-index: 1000;
+    transition: 0.5s;
+    visibility: hidden;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+.scrolltop:hover{
+    background:#1c1d21;
+    color: #fafafa;
+}
+
+.scrolltop_icon{
+    font-size: 15px;
+    color: #fff;
+}
+
+/* show scroll */
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}
  
 /* MEDIA QUERYS */
 
@@ -726,11 +1108,11 @@ textarea::placeholder{
     .navbar-nav{
         display: flex;
     }
-    .nav-item{
+    .nav-link{
         border-bottom: none;
         position: relative;
     }
-    .nav-item:after{
+    .nav-link:after{
         position: absolute;
         content: "";
         bottom: 9px;
@@ -740,16 +1122,16 @@ textarea::placeholder{
         background: var(--malibu);
         transition: width 0.3s ease;
     }
-    .nav-item:hover{
+    .nav-link:hover{
         background: none;
     }
-    .nav-item:hover:after{
+    .nav-link:hover:after{
         width: 70%;
     }
     .navbar-brand{
         color: white;
     }
-    .nav-link:hover{
+    .nav-item:hover{
         opacity: 0.8;
     }
 
@@ -763,14 +1145,14 @@ textarea::placeholder{
         padding: 0 110px 0;
         border-bottom: 1.5px solid var --light-grey;
     }
-    .fxd-navbar-wrapper .nav-link{
+    .fxd-navbar-wrapper .nav-item{
         color: black;
         opacity: 0.8;
     }
     .fxd-navbar-wrapper .navbar-brand{
         color: black;
     }
-    .fxd-navbar-wrapper .nav-link:hover{
+    .fxd-navbar-wrapper .nav-item:hover{
         color: var(--malibu);
     }
     .prices-wrapper{
@@ -801,13 +1183,65 @@ textarea::placeholder{
         grid-template-columns: repeat(2, 50%);
         grid-gap: 2.5rem;
     }
+    .wompi-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .aulas-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .coaching-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .electricidad-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .emprende-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .energia-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .mantenimiento-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
+    .marketing-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2.5rem;
+    }
    .paginas-wrapper{
        display: grid;
        grid-template-columns: repeat(2, 50%);
        grid-gap: 2.5rem;
    }
+   .software-wrapper{
+       display: grid;
+       grid-template-columns: repeat(2, 50%);
+       grid-gap: 2.5rem;
+   }
+   .tienda-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 2.5rem;
+   }
    .team-wrapper{
     grid-template-columns: repeat(3, 1fr);
    }
 }
+
+
 
