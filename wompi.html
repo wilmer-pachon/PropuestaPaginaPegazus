@@ -1,0 +1,321 @@
+<style>
+    *:not(br):not(tr):not(html) {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+  
+    body {
+      width: 100% !important;
+      height: 100%;
+      margin: 0;
+      line-height: 1.4;
+      background-color: #F2F4F6;
+      color: #74787E;
+      -webkit-text-size-adjust: none;
+    }
+  
+    p,
+    ul,
+    ol,
+    blockquote {
+      line-height: 1.4;
+      text-align: left;
+    }
+  
+    a {
+      color: #3869D4;
+      text-decoration: none;
+    }
+  
+    a img {
+      border: none;
+    }
+  
+    .email-wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #F2F4F6;
+    }
+  
+    .email-content {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+  
+  
+    .email-masthead {
+      padding: 25px 0;
+      text-align: center;
+    }
+  
+    .email-masthead_logo {
+      width: 94px;
+    }
+  
+    .email-masthead_name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #bbbfc3;
+      text-decoration: none;
+      text-shadow: 0 1px 0 white;
+    }
+  
+  
+    .email-body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      border-top: 1px solid #EDEFF2;
+      border-bottom: 1px solid #EDEFF2;
+      background-color: #FFFFFF;
+    }
+  
+    .email-body_inner {
+      width: 570px;
+      margin: 0 auto;
+      padding: 0;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #FFFFFF;
+    }
+  
+    .email-footer {
+      width: 570px;
+      margin: 0 auto;
+      padding: 0;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: center;
+    }
+  
+    .email-footer p {
+      color: #AEAEAE;
+    }
+  
+    .body-action {
+      width: 100%;
+      margin: 30px auto;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: center;
+    }
+  
+    .body-sub {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #EDEFF2;
+    }
+  
+    .content-cell {
+      padding: 35px;
+    }
+  
+    .preheader {
+      display: none !important;
+    }
+  
+  
+  
+  
+  
+    .align-right {
+      text-align: right;
+    }
+  
+    .align-left {
+      text-align: left;
+    }
+  
+    .align-center {
+      text-align: center;
+    }
+  
+  
+  
+    @media only screen and (max-width: 600px) {
+  
+      .email-body_inner,
+      .email-footer {
+        width: 100% !important;
+      }
+    }
+  
+    @media only screen and (max-width: 500px) {
+      .button {
+        width: 100% !important;
+      }
+    }
+  
+  
+    .button {
+      background-color: #0054a4;
+      border-top: 10px solid #0054a4;
+      border-right: 18px solid #0054a4;
+      border-bottom: 10px solid #0054a4;
+      border-left: 18px solid #0054a4;
+      display: inline-block;
+      color: #FFF;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+      -webkit-text-size-adjust: none;
+      cursor: pointer;
+    }
+  
+  
+  
+  
+  
+    h1 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    h2 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    h3 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    p {
+      margin-top: 0;
+      color: #74787E;
+      font-size: 16px;
+      line-height: 1.5em;
+      text-align: left;
+    }
+  
+    p.disclaimer {
+      color: #8D9095;
+    }
+  
+    p.sub {
+      font-size: 12px;
+    }
+  
+    p.center {
+      text-align: center;
+    }
+    .waybox-button {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      background-color: rgb(26, 69, 148);
+      border: 0px none;
+      border-radius: 4px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 400;
+      font-size: 14px;
+      padding: 0px 16px;
+      color: white;
+      cursor: pointer;
+  }
+  
+  .waybox-button::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 229.5 229.5'%3E%3Cpath fill='%23fff' d='M214.419 32.12A7.502 7.502 0 0 0 209 25.927L116.76.275a7.496 7.496 0 0 0-4.02 0L20.5 25.927a7.5 7.5 0 0 0-5.419 6.193c-.535 3.847-12.74 94.743 18.565 139.961 31.268 45.164 77.395 56.738 79.343 57.209a7.484 7.484 0 0 0 3.522 0c1.949-.471 48.076-12.045 79.343-57.209 31.305-45.217 19.1-136.113 18.565-139.961zm-40.186 53.066l-62.917 62.917c-1.464 1.464-3.384 2.197-5.303 2.197s-3.839-.732-5.303-2.197l-38.901-38.901a7.497 7.497 0 0 1 0-10.606l7.724-7.724a7.5 7.5 0 0 1 10.606 0l25.874 25.874 49.89-49.891a7.497 7.497 0 0 1 10.606 0l7.724 7.724a7.5 7.5 0 0 1 0 10.607z'/%3E%3C/svg%3E");
+      background-size: contain;
+      vertical-align: middle;
+    transform: translateY(-8%);}
+  </style>
+
+  <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
+  
+          <tr>
+            <td class="email-body" width="100%" cellpadding="0" cellspacing="0">
+              <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
+  
+                <tr>
+                  <td class="content-cell">
+  
+                    <p class="">Buen día, para hacer el pago clic en pagar con Wompi</p>
+  
+                    <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center">
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <form action="https://checkout.wompi.co/p/" method="GET">
+                                        <input type="hidden" name="public-key" value="pub_test_GZlevgVBlUIA4Aq8jcYjNPJBJEnbitYV" />
+                                        <input type="hidden" name="currency" value="COP" />
+                                        <input type="hidden" name="amount-in-cents" value="100000" />
+                                        <input type="hidden" name="reference" value=${id} />
+                                        <button type="submit" class="waybox-button">Pagar con Wompi</button>
+                                      </form>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="disclaimer">Cualquier duda o inquietud por favor llame al 4449092.</p>
+                    <p class="disclaimer">
+                      Laboratorios Las Américas AUNA agradece su confianza para cuidar su bienestar y salud.</p>
+  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-cell" align="center">
+                    <p class="sub align-center">&copy; 2020 Laboratorio Médico Las Americas. Todos los derechos reservados.
+                      <br>Diagonal 75B 2A 80 Interior 140
+                      <br>Medellín, Colombia
+                      <br>Tel: +57 (4) 444 9092
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
